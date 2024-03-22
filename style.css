@@ -1,17 +1,27 @@
-@media screen {
-  
+
+/* header */
+
+#header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
+/* hero */
+
 body {
-  padding: 0px 0px 12px 24px;
 }
-.header {
-  display: flex;
-  justify-content: center;
+
+h1 {
+  font-family: inter;
+  font-size: 56px;
+  color: #00214D;
 }
 
 .hero {
   display: flex;
+  flex-direction: row;
   flex: 1 1 0;
   margin-top: 32px;
 }
@@ -23,28 +33,51 @@ body {
   /* background-color: #FE8350; */
 }
 
+#title_div {
+  width: 100%;
+}
+
 #hero_title {
   width: 80%;
 }
 
-#hero_copy {
+#copy_container {
   width: 50%;
   align-self: flex-end;
   margin-right: -30px;
+  background-color: #c6c6c6;
+  opacity: 80%;
+  padding: 24px;
+}
+
+#hero_copy {
+  line-height: 1.4;
 }
 
 #hero_b {
   display: flex;
-  flex: 0 1 0;
+  flex: 1 1 0;
   flex-direction: column;
   align-items: end;
   z-index: -1;
+}
+
+#img_div {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+#parking_img {
+  width: 100%;
+  height: auto;
 }
 
 .button {
   padding: 12px;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
   width: 220px;
   height: 80px;
   background-color: #FE8350;
@@ -54,12 +87,6 @@ body {
   margin: -40px 60px;
 }
 
-h1 {
-  font-family: inter;
-  font-size: 56px;
-  color: #00214D;
-}
-
 #footer {
   display: flex;
   flex: 1 1 0;
@@ -67,6 +94,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   margin-top: 128px;
+  padding-right: 24px;
 }
 
 #footer > div {
@@ -88,7 +116,7 @@ h1 {
   margin-right: 48px;
 }
 
-
+/* text decoration off */
 
 p {
   font-family: "IBM Plex Mono", monospace;
@@ -110,4 +138,58 @@ a:active {
       text-decoration: none;
 }
 
+/* mobile */
+
+@media (801px <= width <= 1200px) {
+  h1 {
+  font-size: 40px;
+}
+}
+
+@media (501px <= width <= 800px) {
+  h1 {
+  font-size: 32px;
+}
+.button {
+  width: 148px;
+  height: 54px;
+  font-size: 24px;
+}
+}
+
+@media (max-width: 500px) {
+
+  #header {
+ margin-right: 12px;
+}
+
+  body {
+  /* padding: 0px 0px 12px 24px; */
+  }
+
+  #hero {
+    flex-direction: column;
+    /* width: 100%; */
+  }
+
+  #hero_title {
+  width: 100%;
+}
+
+#copy_container {
+  width: 100%;
+  background-color: #c6c6c6;
+  opacity: 80%;
+  padding: 12px;
+  align-self: center;
+  margin-right: 0px;
+}
+.hero {
+  display: flex;
+  flex: 1 1 0;
+  margin-top: 24px;
+  flex-direction: column;
+}
+}
+}
 
