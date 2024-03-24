@@ -2,6 +2,7 @@
 /* header */
 
 #header {
+  margin: 16px 0px;
   width: 100%;
   height: auto;
   display: flex;
@@ -13,7 +14,13 @@
 body {
 }
 
+#lottie {
+  width: 492px;
+  height: 59px;
+}
+
 h1 {
+  margin-left: 16px;
   font-family: inter;
   font-size: 56px;
   color: #00214D;

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Lottie Animation -->
+
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
   <link rel="stylesheet" href="./style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -15,7 +20,9 @@
 <div id="header">
   <div></div>
   <div>
-    <img src="assets/designated_logo.svg" alt="D shaped logo with Designated Technologies trailing logomark">
+    <!-- <img src="assets/designated_logo.svg" alt="D shaped logo with Designated Technologies trailing logomark"> -->
+    <dotlottie-player id="lottie" src="https://lottie.host/e850d48d-1d84-472f-9cee-a2ce4eebc916/LM542ZZIzQ.json"
+      background="transparent" speed="1" autoplay></dotlottie-player>
   </div>
   <div></div>
 </div>
