@@ -236,9 +236,10 @@ a:active {
 
 .hero_b {
   width: 100%;
+  margin-top: 32px;
 }
 
-  #hero_title {
+#hero_title {
   width: 100%;
 }
 
@@ -246,15 +247,52 @@ a:active {
   width: 100%;
   background-color: #c6c6c6;
   opacity: 80%;
-  padding: 12px;
+  /* padding: 24px; */
   align-self: center;
-  margin-right: 0px;
+  justify-content: center;
+  /* margin-right: 0px; */
 }
+
 .hero {
   display: flex;
   flex: 1 1 0;
   margin-top: 24px;
   flex-direction: column;
+}
+
+#img_div {
+  width: 100%;
+}
+
+#parking_img {
+  width: 90%;
+  height: 80%;
+}
+
+#footer {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 128px;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-bottom: 24px;
+}
+
+#footer>div {
+  width: 100%;
+}
+
+#footer>div>img {
+  margin-right: 12px;
+  height: 48px;
+  width: 38px;
+}
+
+#footer_links>a {
+  width: 100%;
 }
 
 
