@@ -9,6 +9,25 @@
   justify-content: space-between;
 }
 
+.left_header {
+  width: 30%;
+}
+
+.logo_div {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+
+.right_header {
+  width: 30%;
+}
+
+.logo {
+  width: 100%;
+}
+
 /* hero */
 
 body {
@@ -37,6 +56,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  width: 55%;
   /* background-color: #FE8350; */
 }
 
@@ -61,26 +81,28 @@ h1 {
   line-height: 1.4;
 }
 
-#hero_b {
+.hero_b {
   display: flex;
   flex: 1 1 0;
   flex-direction: column;
   align-items: end;
-  z-index: -1;
+  width: 45%;
+  /* z-index: -1; */
 }
 
 #img_div {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   width: auto;
+  background-color: #D3DEE6;
 }
 
 #parking_img {
-  width: 100%;
-  height: auto;
+  width: 90%;
+  height: 80%;
 }
 
-.button {
+#contact_button {
   padding: 12px;
   display: flex;
   justify-content: flex-end;
@@ -94,6 +116,20 @@ h1 {
   margin: -40px 60px;
 }
 
+#button {
+
+  font-family: inter;
+  font-size: 32px;
+  color: #00214D;
+  opacity: 30%;
+  
+}
+
+#contact_button:hover {
+  background-color: #00214D;
+  color: #FE8350;
+}
+
 #footer {
   display: flex;
   flex: 1 1 0;
@@ -102,6 +138,8 @@ h1 {
   justify-content: space-between;
   margin-top: 128px;
   padding-right: 24px;
+  padding-left: 24px;
+  margin-bottom: 24px;
 }
 
 #footer > div {
@@ -157,7 +195,7 @@ a:active {
   h1 {
   font-size: 32px;
 }
-.button {
+#contact_button {
   width: 148px;
   height: 54px;
   font-size: 24px;
@@ -166,18 +204,39 @@ a:active {
 
 @media (max-width: 500px) {
 
-  #header {
- margin-right: 12px;
+#header {
+    margin: 0px;
+    width: 100%;
+  }
+
+    h1 {
+      font-size: 32px;
+    }
+
+.left_header {
+  width: 2%;
+}
+
+.logo_div {
+  width: 96%;
+}
+
+.right_header {
+  width: 2%;
 }
 
   body {
   /* padding: 0px 0px 12px 24px; */
   }
 
-  #hero {
-    flex-direction: column;
-    /* width: 100%; */
-  }
+#hero_a {
+  width: 100%;
+  /* background-color: #FE8350; */
+}
+
+.hero_b {
+  width: 100%;
+}
 
   #hero_title {
   width: 100%;
@@ -197,6 +256,8 @@ a:active {
   margin-top: 24px;
   flex-direction: column;
 }
+
+
 }
 }
 
